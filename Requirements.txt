@@ -1,0 +1,12 @@
+jupyter
+pandas
+numpy
+seaborn
+matplotlib
+lxml
+plotly
+cufflinks
+sklearn
+chart_studio
+statsmodels
+nltk
