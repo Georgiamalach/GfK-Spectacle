@@ -1,5 +1,5 @@
 # GfK-Spectacle
-GfK interview task 
+
 How to set up environment:
 
 pip install virtualenv 
