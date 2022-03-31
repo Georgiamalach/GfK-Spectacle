@@ -3,6 +3,7 @@
 How to set up environment:
 
 pip install virtualenv 
+
 Another option:
 
 py -m pip install virtualenv
@@ -10,7 +11,9 @@ py -m pip install virtualenv
 Windows:
 
 python -m venv .venv
+
 .venv\Scripts\activate
+
 Another option:
 
 py -m venv .venv
