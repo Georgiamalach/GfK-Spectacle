@@ -10,17 +10,14 @@
 	c) One or two features - main_text and/or retailer_pg
 	d) Whether pre-processing is needed / which menthod to use
 	e) Which model to use for prediction
-	f) Any feature selection needed
 	g) How to benchmark the results
 
 5. Tested some of the options above - decided to use the following method (GfK Spectacle Global_FINAL):
 	
-Global model using both features (main_text and retailer_pg) to directly predict the item_id, using initial text stemming and lemmatization and then Tf-idf Vectorizer for pre-processing of both features and combining them. Using Naive Bayes for model prediction and SelectKBest to select the best features for the model. Precision, Recall and F1 scores calculated to evaluate the effectiveness of the model and be able to benchmark against other models.
+Global model using both features (main_text and retailer_pg) to directly predict the item_id, using initial text stemming and lemmatization and then Tf-idf Vectorizer for pre-processing of both features and combining them. Using Naive Bayes for model prediction. Precision, Recall and F1 scores calculated to evaluate the effectiveness of the model and be able to benchmark against other models.
  
 I decided to use this method as there are enough categories to predict the item_id directly and I thought there was no point in adding an extra layer if not necessary. With a Global model both features will be relevant and can be added together into one text column (if I was breaking down by country I could only use one feature for Germany).
 
 Tf-idf: Weights the word counts by a measure of how often they appear in the documents.
 
 Categorical Naive Bayes: probabilistic classifier based on Bayes Theorem. Suitable for classification with discrete features that are categorically distributed.
-
-SelectKBest: Selects the top features. Works by retaining the first k features of X with the highest scores.
